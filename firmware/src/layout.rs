@@ -79,11 +79,11 @@ pub const fn make_keymap() -> Layers {
     #[rustfmt::skip]
     const KEYMAP: Layers = [
         [
-            [K_ESC,   K_1,     K_2,     K_3,     K_4,     K_5,     NK,    /*|*/ NK,      K_6,     K_7,     K_8,      K_9,     K_0,     k(Minus),],
-            [k(Tab),  k(Q),    k(W),    k(E),    k(R),    k(T),    NK,    /*|*/ NK,      k(Y),    k(U),    k(I),     k(O),    k(P),    K_EQ,    ],
-            [K_LSHFT, k(A),    k(S),    k(D),    k(F),    k(G),    NK,    /*|*/ NK,      k(H),    k(J),    k(K),     k(L),    K_SEMI,  K_QUOT,  ],
-            [K_LCTRL, k(Z),    k(X),    k(C),    k(V),    k(B),    K_ENT, /*|*/ K_BSP,   k(N),    k(M),    k(Comma), k(Dot),  K_SLSH,  K_HASH,  ],
-            [NK,      NK,      K_LGUI,  L_2,     K_LALT,  L_1,     K_SPC, /*|*/ L_1,     L_2,     K_LALT,  K_LGUI,   K_LCTRL, NK,      NK,      ],
+            [k(Q), k(W), k(E), k(R), k(T), NK, NK,      /*|*/  k(Y), k(U), k(I), k(O), k(P), NK, NK, ],
+            [k(A), k(S), k(D), k(F), k(G), NK, NK,      /*|*/  k(H), k(J), k(K), k(L), K_0, NK, NK, ],
+            [k(Z), k(X), k(C), k(V), k(B), NK, NK,      /*|*/  k(N), k(M), K_0, K_1, K_2, NK, NK, ],
+            [K_5, K_BSP, K_7, K_SPC, K_LSHFT, NK,  NK,  /*|*/  K_5, K_6, K_7, K_8, K_9, NK,  NK, ],
+            [K_0, K_1, K_RSTL, K_3, K_BSP, NK,  NK,     /*|*/  K_0, K_1, K_RSTR, K_3, K_4, NK,  NK, ],
         ],
         // Nav / Select
         [
